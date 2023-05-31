@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://social-n1sl.onrender.comauth/register",
+      "https://social-n1sl.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -262,7 +262,7 @@ const Form = () => {
               }}
             >
               {isLogin
-                ? "Don't have an account? Sign Up here."
+                ? "New here? Sign Up ."
                 : "Already have an account? Login here."}
             </Typography>
           </Box>
